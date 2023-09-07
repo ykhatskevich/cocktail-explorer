@@ -1,13 +1,280 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,400;0,700;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    font-size: 60%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E0C2;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+
+
+.search label {
+    font-size:1.3rem;
+}
+
+.search-btn{
+    background-color: #F5A09B;
+    font-size:2rem;
+    border:none;
+    border-radius:10px;
+    padding: 0.5rem 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    cursor:pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input-container label {
+    /* margin-right:1rem; */
+    font-size:1.8rem;
+    
+}
+
+.input-container input {
+    font-size:2rem;
+    margin-top:0.8rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size:1.8rem;
+    text-align:justify;
+}
+
+.description span {
+    display:block;
+    /* margin-bottom: 1rem; */
+    font-size:2.3rem;
+    font-weight:bold;
+    color: #373B67;
+}
+
+.description-img {
+    margin-top:2rem;
+    max-width:80%;
+    height:auto;
+}
+
+.drink-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.6rem;
+    
+}
+
+.drink-container h2 {
+    font-size:1.8rem;
+    margin-bottom: 10px;
+    
+}
+
+.drink-image {
+    border-radius: 8px; /* Round the corners of the image */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a tiny shadow to the image */
+}
+
+
+.ingredients {
+    font-size:1.5rem;
+    margin-top:1.5rem;
+}
+.ingredients span {
+
+    font-style:italic;
+}
+
+.instructions {
+font-size:1.8rem;
+margin-top:1.1rem;
+text-align:justify;
+}
+
+.separator {
+    border-top: 1px solid #ccc; /* You can adjust the color and thickness */
+    margin: 1rem 0; /* Add margin to space out the lines */
+  }
+   
+
+
+
+
+h1 {
+    font-family: 'Pacifico', sans-serif;
+    color: #9E519B;
+    font-size: 3.4rem;
+}
+
+.no-results {
+  font-size:2rem;
+}
+
+
+
+@media (max-width: 767px) {
+    /* Add a class to target the images specifically */
+    .drink-image {
+      max-width: 80%; /* Set the maximum width to 100% of their container */
+      height: auto; /* Automatically adjust the height to maintain aspect ratio */
+      display:block;
+      margin:0 auto;
+    
+    }
+  }
+
+  
+  
+  @media (min-width:390px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    .search label {
+        font-size:2.5rem;
+    }
+
+
+    .input-container input {
+        font-size:3rem;
+        margin-top:0.8rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .search-btn{
+        font-size:2.8rem;
+        margin-top: 0.1rem;
+        margin-bottom:2rem;
+        
+    }
+
+    .ingredients {
+        margin-top:1.4rem;
+        font-size:2rem;
+    }
+    
+  }
+
+
+
+  /* @media (min-width: 767px ) {
+    h1 {
+        font-size: 4rem;
+    }
+  } */
+
+
+
+@media (max-width: 767px) {
+    /* Add a class to target the images specifically */
+    .drink-image {
+      max-width: 80%; /* Set the maximum width to 100% of their container */
+      height: auto; /* Automatically adjust the height to maintain aspect ratio */
+      display:block;
+      margin:0 auto;
+    
+    }
+  }
+
+  @media (min-width: 820px) {
+
+    .input-container input {
+        font-size:4rem;
+        
+        margin-left: 1.5rem;
+    }
+
+    .input-container label {
+        font-size:3rem;
+        
+    }
+
+    h1 {
+        
+        font-size: 6rem;
+    }
+
+
+    .search-btn{
+        
+        font-size:4rem;
+        
+        padding: 1rem 2rem;
+        
+    }
+
+    .app {
+        width: 100%;
+        height: 100vh;
+        padding: 3rem;
+        padding-top: 1rem;
+
+    }
+
+    .drink-container h2 {
+        font-size:3rem;
+        margin-bottom: 10px;
+        
+    }
+
+    .drink-image {
+        max-width: 70%; /* Set the maximum width to 100% of their container */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+        display:block;
+        margin:0 auto;
+    
+
+  }
+
+
+  .drink-container {
+    
+    margin-bottom: 5rem;
+    
+}
+
+.ingredients {
+    font-size:3rem;
+}
+
+.instructions {
+    font-size:3rem;
+    
+    }
+    
+
+    .description {
+        font-size:2.4rem;
+        
+    }
+    
+    .description span {
+        
+        font-size:2.8rem;
+        
+    }
+    
+    .description-img {
+        margin-top:2rem;
+        max-width:90%;
+        
+    }
+
+
 }
